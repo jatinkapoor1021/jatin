@@ -2,7 +2,7 @@
 #include <string>
 
 char shiftChar(char c, int rshift){
-    //FOR LOWERCASE LETTERS
+    
     if(c>=97 && c<=122){
         if(rshift>=0 && rshift<=25){
             if(c + rshift>122){
@@ -12,7 +12,7 @@ char shiftChar(char c, int rshift){
         }
     return c;
     }
-    //FOR CAPITAL LETTERS
+   
     if(c>=65 && c<=90){
         if(rshift>=0 && rshift<=25){
             c = c + rshift;

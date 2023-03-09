@@ -7,14 +7,14 @@
 TEST_CASE("Task B Tests"){
     CHECK(shiftChar('Y',9) == 'H');
     CHECK(shiftChar('y',7) == 'f');
-    CHECK(encryptCaesar("The early bird catches the worm.", 25) == "Znt ejcpw dzqgx fkb rgovk vjku nqy.");
+    CHECK(encryptCaesar("The cat in the hat.", 12) == "Pda xyq ef pda zpe.");
 }
 
 TEST_CASE("Task C Test"){
-    CHECK(encryptVigenere("The early bird catches the worm.", "cake") == "Qeb nfamj xjwcn ugp yqtnk xctc lcp.");   
+    CHECK(encryptVigenere("The cat in the hat.", "key") == "Tqd dom ed tcc.");   
 }
 
 TEST_CASE("Task D Tests"){
-    CHECK(decryptCaesar("Znt ejcpw dzqgx fkb rgovk vjku nqy.", 25) == "The early bird catches the worm.");
-    CHECK(decryptVigenere("Qeb nfamj xjwcn ugp yqtnk xctc lcp.", "cake") == "The early bird catches the worm.");
+    CHECK(decryptCaesar("Pda xyq ef pda zpe.", 6) == "The cat in the hat.");
+    CHECK(decryptVigenere("Tqd dom ed tcc.", "key") == "The cat in the hat.");
 }

@@ -11,7 +11,7 @@ std::string ascii_converter(std::string text){
 
 int main(){
 
-    std::cout << ascii_converter("The early bird catches the worm.");
+    std::cout << ascii_converter("The cat in the hat.");
     
     return 0;
 }

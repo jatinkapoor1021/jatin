@@ -6,12 +6,13 @@
 
 int main()
 {
-  std::cout << shiftChar('Y',9) << "\n";
-  std::cout << shiftChar('y',7) << "\n";
-  std::cout << encryptCaesar("The early bird catches the worm.", 25) << "\n";
-  std::cout << encryptVigenere("The early bird catches the worm.", "cake") << "\n";
-  std::cout << decryptCaesar("Znt ejcpw dzqgx fkb rgovk vjku nqy.", 25) << "\n";
-  std::cout << decryptVigenere("Qeb nfamj xjwcn ugp yqtnk xctc lcp.", "cake") << "\n";
+  std::cout << shiftChar('Q', 3) << "\n"; // outputs T
+  std::cout << shiftChar('q', 7) << "\n"; // outputs x
+  std::cout << encryptCaesar("The cat in the hat", 12) << "\n"; // outputs ftq mmd uz ft tmd
+  std::cout << encryptVigenere("The cat in the hat", "key") << "\n"; // outputs Ufi fbu km yfq
+  std::cout << decryptCaesar("Pda xyq ef pda zpe", 6) << "\n"; // outputs The cat in the hat
+  std::cout << decryptVigenere("Tqd dom ed tcc", "key") << "\n"; // outputs The cat in the hat
+
 
   return 0;
 }

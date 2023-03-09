@@ -5,8 +5,8 @@
 #include "decrypt.h"
 
 TEST_CASE("Task B Tests"){
-    CHECK(shiftChar('Y',9) == 'H');
-    CHECK(shiftChar('y',7) == 'f');
+    CHECK(shiftChar('Q',3) == 'T');
+    CHECK(shiftChar('q',7) == 'x');
     CHECK(encryptCaesar("The cat in the hat.", 12) == "Pda xyq ef pda zpe.");
 }
 

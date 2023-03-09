@@ -1,20 +1,20 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "caesar.h"
+#include "funcs.h"
+#include "caeser.h"
 #include "vigenere.h"
 #include "decrypt.h"
 
-TEST_CASE("Task B Tests"){
-    CHECK(shiftChar('Z',9) == 'T');
-    CHECK(shiftChar('x',7) == 'x');
-    CHECK(encryptCaesar("The cat in the hat.", 3) == "Pda xyq ef pda zpe.");
-}
-
-TEST_CASE("Task C Test"){
-    CHECK(encryptVigenere("I like to eat pizza and pasta.", "secret") == "Tqd dom ed tcc.");   
-}
-
-TEST_CASE("Task D Tests"){
-    CHECK(decryptCaesar("Qeb jxw lmtk qeb lew.", 3) == "The cat in the hat.");
-    CHECK(decryptVigenere("L dzct gv drj vskgb gbd yvnw.", "secret") == "I like to eat pizza and pasta.");
+// add your tests here
+TEST_CASE("TESTS"){
+    CHECK(shiftChar('a', 25) == 'z');
+    CHECK(shiftChar('z', 25) == 'y');
+    CHECK(encryptCaesar("Hello, World!", 10) == "Rovvy, Gybvn!");
+    CHECK(encryptCaesar("What a sentence", 10) == "Grkd k coxdoxmo");
+    CHECK(decryptCaesar("Rovvy, Gybvn!", 10) == "Hello, World!");
+    CHECK(decryptCaesar("Grkd k coxdoxmo", 10) == "What a sentence");
+    CHECK(encryptVigenere("Hello, World!", "cake") == "Jevpq, Wyvnd!");
+    CHECK(encryptVigenere("What a sentence", "power") == "Lvwx r hsjxvcqa");
+    CHECK(decryptVigenere("Jevpq, Wyvnd!", "cake") == "Hello, World!");
+    CHECK(decryptVigenere("Lvwx r hsjxvcqa", "power") == "What a sentence");
 }

@@ -7,14 +7,14 @@
 TEST_CASE("Task B Tests"){
     CHECK(shiftChar('Y',9) == 'H');
     CHECK(shiftChar('y',7) == 'f');
-    CHECK(encryptCaesar("The quick brown fox jumps over the lazy dog.", 25) == "Sgd pthbj aqnvm enw itlor nudq sgd kzyx cnf.");
+    CHECK(encryptCaesar("The early bird catches the worm.", 25) == "Znt ejcpw dzqgx fkb rgovk vjku nqy.");
 }
 
 TEST_CASE("Task C Test"){
-    CHECK(encryptVigenere("The quick brown fox jumps over the lazy dog.", "cake") == "Vho uwimo dryap fyb luwtu ofit tri najc foq.");   
+    CHECK(encryptVigenere("The early bird catches the worm.", "cake") == "Qeb nfamj xjwcn ugp yqtnk xctc lcp.");   
 }
 
 TEST_CASE("Task D Tests"){
-    CHECK(decryptCaesar("Sgd pthbj aqnvm enw itlor nudq sgd kzyx cnf.", 25) == "The quick brown fox jumps over the lazy dog.");
-    CHECK(decryptVigenere("Vho uwimo dryap fyb luwtu ofit tri najc foq.", "cake") == "The quick brown fox jumps over the lazy dog.");
+    CHECK(decryptCaesar("Znt ejcpw dzqgx fkb rgovk vjku nqy.", 25) == "The early bird catches the worm.");
+    CHECK(decryptVigenere("Qeb nfamj xjwcn ugp yqtnk xctc lcp.", "cake") == "The early bird catches the worm.");
 }

@@ -5,16 +5,16 @@
 #include "decrypt.h"
 
 TEST_CASE("Task B Tests"){
-    CHECK(shiftChar('Q',3) == 'T');
-    CHECK(shiftChar('q',7) == 'x');
-    CHECK(encryptCaesar("The cat in the hat.", 12) == "Pda xyq ef pda zpe.");
+    CHECK(shiftChar('Z',9) == 'T');
+    CHECK(shiftChar('x',7) == 'x');
+    CHECK(encryptCaesar("The cat in the hat.", 3) == "Pda xyq ef pda zpe.");
 }
 
 TEST_CASE("Task C Test"){
-    CHECK(encryptVigenere("The cat in the hat.", "key") == "Tqd dom ed tcc.");   
+    CHECK(encryptVigenere("I like to eat pizza and pasta.", "secret") == "Tqd dom ed tcc.");   
 }
 
 TEST_CASE("Task D Tests"){
-    CHECK(decryptCaesar("Pda xyq ef pda zpe.", 6) == "The cat in the hat.");
-    CHECK(decryptVigenere("Tqd dom ed tcc.", "key") == "The cat in the hat.");
+    CHECK(decryptCaesar("Qeb jxw lmtk qeb lew.", 3) == "The cat in the hat.");
+    CHECK(decryptVigenere("L dzct gv drj vskgb gbd yvnw.", "secret") == "I like to eat pizza and pasta.");
 }

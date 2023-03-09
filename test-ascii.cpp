@@ -12,6 +12,7 @@ std::string ascii_converter(std::string text){
 int main(){
 
     std::cout << ascii_converter("The cat in the hat.");
+    std::cout << ascii_converter("I like to eat pizza and pasta.");
     
     return 0;
 }

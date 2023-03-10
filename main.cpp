@@ -16,8 +16,8 @@ int main(){
     std::cout<<decryptCaesar("Rovvy, Gybvn!", 10)<<"\n";
     std::cout<<decryptCaesar("Grkd k coxdoxmo", 10)<<"\n";
 
-    std::cout<<encryptVigenere("Hello, World!", "cake")<<"\n";
-    std::cout<<encryptVigenere("What a sentence", "power")<<"\n";
+    std::cout<<encryptVigenere("Hello my friends!", "cake")<<"\n";
+    std::cout<<encryptVigenere("What is the plan for this weekend", "power")<<"\n";
 
     std::cout<<decryptVigenere("Jevpq, Wyvnd!", "cake")<<"\n";
     std::cout<<decryptVigenere("Lvwx r hsjxvcqa", "power")<<"\n";

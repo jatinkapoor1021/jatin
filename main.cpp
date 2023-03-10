@@ -10,8 +10,8 @@ int main(){
     std::cout<<shiftChar('a', 25)<<"\n";
     std::cout<<shiftChar('z', 25)<<"\n";
 
-    std::cout<<encryptCaesar("Hello, World!", 10)<<"\n";
-    std::cout<<encryptCaesar("What a sentence", 10)<<"\n";
+    std::cout<<encryptCaesar("Hello, how are you!", 10)<<"\n";
+    std::cout<<encryptCaesar("What are you doing", 10)<<"\n";
 
     std::cout<<decryptCaesar("Rovvy, Gybvn!", 10)<<"\n";
     std::cout<<decryptCaesar("Grkd k coxdoxmo", 10)<<"\n";

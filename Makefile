@@ -11,7 +11,7 @@ test-ascii.o: test-ascii.cpp
 
 main.o: main.cpp  
 
-caesar.o: caesar.cpp caeser.h
+caesar.o: caesar.cpp caesar.h
 
 tests.o: tests.cpp doctest.h
 	g++ -c -std=c++11 tests.cpp

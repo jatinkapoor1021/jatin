@@ -17,3 +17,19 @@ TEST_CASE("TESTS"){
     CHECK(decryptVigenere("Jrtuv hj uioprve!", "cake") == "Hello my friends!");
     CHECK(decryptVigenere("Hruj ip typ efhk ipe onvc yjuqwel", "power") == "What is the plan for this weekend!");
 }
+// zamansky specifications 4/17/2023
+    TEST_CASE("Frequency Cases"){
+        CHECK(freq('a',"aaaa")==100);
+        CHECK(freq('o', "hello world") == doctest::Approx(18.1818));
+}
+
+    TEST_CASE("Distance Cases"){
+        double a[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        double b[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        CHECK(distance(a,b) == 0);
+}
+
+    TEST_CASE("Solve using probability"){
+        CHECK(solve(encryptCaesar("I love cats from the moon and back", 10))=="I love cats from the moon and back");
+        CHECK(solve(encryptCaesar("Programming is my favorite weekend activity", 15))=="Programming is my favorite weekend activity");
+}

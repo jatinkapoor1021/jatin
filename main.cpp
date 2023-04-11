@@ -22,5 +22,10 @@ int main(){
     std::cout<<decryptVigenere("Jrtuv hj uioprve!", "cake")<<"\n";
     std::cout<<decryptVigenere("Hruj ip typ efhk ipe onvc yjuqwel", "power")<<"\n";
     
+     // zamansky specifications 4/17/2023
+    std::cout << solve(encryptCaesar("I love cats from the moon and back", 10)) << endl;
+    std::cout << solve(encryptCaesar("Programming is my favorite weekend activity", 15)) << endl;
+
+    return 0;
     
 }
